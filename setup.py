@@ -5,7 +5,7 @@ from setuptools import setup
 
 tensorflow = 'tensorflow'
 if platform.system() == 'Darwin' and platform.processor() == 'arm':
-    tensorflow = 'tensorflow-macos'
+    tensorflow = 'tensorflow'
     # https://github.com/grpc/grpc/issues/25082
     os.environ['GRPC_PYTHON_BUILD_SYSTEM_OPENSSL'] = '1'
     os.environ['GRPC_PYTHON_BUILD_SYSTEM_ZLIB'] = '1'
